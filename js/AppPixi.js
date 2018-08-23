@@ -17,6 +17,7 @@ const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
 chillAudio.load();
 window.document.onload = function(e){ 
+  chillAudio.pause();
   chillAudio.play();
 }
 
