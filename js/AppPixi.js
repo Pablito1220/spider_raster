@@ -12,6 +12,17 @@ const PARTICLE_AMOUT = 10000;
 let SPEED = 2;
 const PI = 3.14;
 
+let simulateClick = function (elem) {
+	// Create our event (with options)
+	let evt = new MouseEvent('click', {
+		bubbles: true,
+		cancelable: true,
+		view: window
+	});
+	// If cancelled, don't dispatch our event
+	let canceled = !elem.dispatchEvent(evt);
+};
+
 const chillAudio = new Audio('chillAudio.mp3');
 const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
