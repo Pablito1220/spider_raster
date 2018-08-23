@@ -12,12 +12,11 @@ const PARTICLE_AMOUT = 10000;
 let SPEED = 2;
 const PI = 3.14;
 
-
-
 const chillAudio = new Audio('chillAudio.mp3');
 const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
 
+window.onload = function(e){ 
 let simulateClick = function (elem) {
 	// Create our event (with options)
 	let evt = new MouseEvent('click', {
@@ -36,7 +35,7 @@ chillAudio.load();
 setTimeout(function() {
     chillAudio.play();
 }, 0);
-
+}
 
 const SCREEN = {
   'width': window.innerWidth,
