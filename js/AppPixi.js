@@ -268,6 +268,9 @@ class App {
 
   }
   draw() {
+    if(this.counter == 3){
+    chillAudio.play();
+    }
     if (this.counter % 500 == 0 && this.counter != 0) {
       this.click = false;
       chillAudio.pause();
