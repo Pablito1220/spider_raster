@@ -17,15 +17,6 @@ const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
 
 window.onload = function(e){ 
-let simulateClick = function (elem) {
-	// Create our event (with options)
-	let evt = new MouseEvent('click', {
-		bubbles: true,
-		cancelable: true,
-		view: window
-	});
-};
-
 chillAudio.load();
   chillAudio.pause();
 setTimeout(function() {
