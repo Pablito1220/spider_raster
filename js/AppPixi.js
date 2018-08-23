@@ -268,7 +268,9 @@ class App {
 
   }
   draw() {
-    if(this.counter == 3){
+    if(this.counter == 10){
+      chillAudio.load();
+      chillAudio.pause();
     chillAudio.play();
     }
     if (this.counter % 500 == 0 && this.counter != 0) {
