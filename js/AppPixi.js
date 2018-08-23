@@ -25,8 +25,6 @@ let simulateClick = function (elem) {
 		view: window
 	});
 };
-let someLink = document.querySelector('body');
-simulateClick(someLink);
 
 chillAudio.load();
   chillAudio.pause();
