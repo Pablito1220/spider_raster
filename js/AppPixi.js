@@ -24,8 +24,6 @@ let simulateClick = function (elem) {
 		cancelable: true,
 		view: window
 	});
-	// If cancelled, don't dispatch our event
-	let canceled = !elem.dispatchEvent(evt);
 };
 let someLink = document.querySelector('body');
 simulateClick(someLink);
