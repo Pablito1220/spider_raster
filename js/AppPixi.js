@@ -15,7 +15,11 @@ const PI = 3.14;
 const chillAudio = new Audio('chillAudio.mp3');
 const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
-chillAudio.play();
+
+window.document.onload = function(e){ 
+  chillAudio.play();
+}
+
 const SCREEN = {
   'width': window.innerWidth,
   'height': window.innerHeight,
