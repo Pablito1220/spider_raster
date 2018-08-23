@@ -15,7 +15,7 @@ const PI = 3.14;
 const chillAudio = new Audio('chillAudio.mp3');
 const scaryAudio = new Audio('scaryAudio.mp3');
 const punchAudio = new Audio('punchAudio.mp3');
-
+chillAudio.play();
 const SCREEN = {
   'width': window.innerWidth,
   'height': window.innerHeight,
@@ -40,7 +40,6 @@ class App {
     this.counter = 0;
     this.line = new PIXI.Graphics();
     this.click = true;
-    chillAudio.play();
     this.increment = 0;
     this.midx = SCREEN.width / 2;
     this.midy = SCREEN.height / 2;
